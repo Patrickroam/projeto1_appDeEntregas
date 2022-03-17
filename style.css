@@ -1,0 +1,359 @@
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Righteous', cursive;
+}
+.containerBodyOpaco{
+    opacity: 0.1;
+}
+.corpo{
+    width: 415px;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1px;
+
+    background-color: #EEEEEE;
+
+    padding-top: 100px;
+    margin-top: 30px;
+    margin-bottom: 65px;
+
+    z-index: 1;
+
+}
+
+.header{
+    width: 415px;
+    height: 110px;
+    background-color: red;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 5;
+
+}
+
+.nomeEmpresa{
+    width: 248px;
+    height: 44px;
+
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.lanchesEats{
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 55px;
+    line-height: 100%;
+    letter-spacing: -1.2%;
+
+    color: #FFFFFF
+}
+
+.slogan{
+    width: 226px;
+    height: 17px;
+
+    margin: 1px 25px;
+}
+
+.slogan p{
+    font-family: 'Righteous', cursive;
+    font-weight: 300;
+    font-size: 18px;
+
+    color: #FFFFFF;
+}
+.cardapio{
+    width: 415px;
+    height: 50px;
+
+    background-color: #EEEEEE;
+
+    display: flex;
+
+}
+
+.secaoCardapio{
+    width: 290px;
+    height: 100px;
+
+    margin: 20px 25px;
+}
+
+.secaoCardapio p{
+    font-family: 'Righteous', cursive;
+    font-style:regular;
+    font-size: 26px;
+    color: #333333;
+
+    Letter-spacing: 1.8%
+}
+
+.caixadeOpcoes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+
+    width: 100%;
+    height: 240px;    
+    background-color: #EEEEEE;
+    
+    overflow-x: scroll;
+
+    padding: 0 15px;
+
+    position: relative;
+}
+
+.itens{
+    width: 173px;
+    height: 205px;
+
+    background-color:#FFFFFF;
+    
+    margin: 5px 10px;
+    padding-top: 10px;
+    border-radius: 9px;   
+    
+    position: relative;
+}
+
+.caixadeOpcoes .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 183px;
+    height: 215px;   
+    background-color:#FFFFFF;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 9px;   
+}
+
+.caixadeOpcoes .item.itemSelecionado{
+    border: 5px solid green;
+
+    opacity: 1;
+}
+
+.fotoCardapio{
+    width: 144px;
+    height: 87px;
+
+    margin-left: 15px;
+    border-radius: 1ch;
+
+}
+
+.nomedoItem{
+    width: 139px;
+    height: 23px;
+    
+    margin: 5px 15px;
+}
+
+.nomedoItem p{
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-size: 16px;
+
+    color: #333333;
+}
+.descricaoItem{
+    width: 147px;
+    height: 39px;
+
+    margin: 1px 15px;
+}
+
+.descricaoItem p{
+    font-family: 'Roboto', sans-serif;
+    font-style: light;
+    font-size: 15px;
+
+    color: #A6A6A6;
+}
+
+.caixaPreco{
+    width: 66px;
+    height: 19px;
+
+    margin: 1px 15px;
+
+    display: flex;
+    flex-direction: row;
+}
+.caixaPreco p{
+    font-family: 'Roboto', sans-serif;
+    font-style: regular;
+    font-size: 16px;
+
+    margin-right: 5px;
+
+    color: #000000;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 414px;
+    height: 92px;
+
+    background-color: #FFFFFF;
+
+    position: fixed;
+    bottom: 0;
+
+    margin-bottom: 0px;
+}
+
+.botaoFinalizarPedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 364px;
+    height: 61px;
+
+    border-radius: 50px;
+
+    background-color: #CBCBCB;
+}
+.botaoVerde{
+    background-color: green;
+}
+
+.botaoFinalizarPedido p{
+    font-family: 'Roboto', sans-serif;
+    font-style: 100;
+    font-size: 20px;
+    letter-spacing: 1.8%;
+
+    color: #FFFFFF;
+    
+    text-decoration: none;
+}
+
+.checkbox{
+    opacity: 0;
+
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left: 120px;
+    bottom: 21px;
+
+    color: green;
+}
+
+.caixadeOpcoes .item.itemSelecionado .checkbox {
+    opacity: 1;
+}
+
+
+.containerModal{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 350px;
+    height: 350px;
+
+    background-color: #61D074;
+    border-radius: 1ch;
+
+    position: fixed;
+    top: 150px;
+
+    z-index: -1;
+}
+.containerModalAparente{
+    z-index: 0;
+}
+
+.confirmacao{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    width: 290px;
+    height: 50px;
+}
+.confirmacao p{
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    font-size: 25px;
+
+    color: #FFFFFF;
+}
+.scriptModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 230px;
+}
+.mensagem, .confirmaçãoScript, .Cancelar{
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+.Cancelar, .ultimaConfirmacao{
+    opacity: 0.7;
+}
+
+.ultimaConfirmacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 290px;
+    height: 50px;
+
+    border-radius:5ch;
+
+    background-color: #FFFFFF;
+}
+
+.confirmaçãoScript{
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #61D074;
+}
+
+.opcaoCancelar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 40px;
+}
+
+.Cancelar:hover, .ultimaConfirmacao:hover{
+    opacity: 1;
+}

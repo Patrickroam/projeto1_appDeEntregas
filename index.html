@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Meu Delivery</title>
+</head>
+
+<body>
+    <div class="containerBody">
+        <div class="corpo">
+            <header class="header">
+                <article class="nomeEmpresa">
+                    <h1 class="lanchesEats">LanchesEats</h1>
+                </article>
+                <article class="slogan">
+                    <p>Sua comida em 6 minutos</p>
+                </article>
+            </header>
+            <!--Primeira secção-->
+            <section class="cardapio">
+                <article class="secaoCardapio">
+                    <p>Primeiro, Seu prato</p>
+                </article>
+            </section>
+            <section class="caixadeOpcoes">
+                <main class="item prato " onclick="selecionandoPrato(this)">
+                    <nav class="itens  ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedoPrato">Frango Yin Yang</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>,
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorPrato"> 19,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item prato" onclick="selecionandoPrato(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedoPrato">Sushi</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorPrato"> 55,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item prato" onclick="selecionandoPrato(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedoPrato">Costela Assada</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorPrato"> 33,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item prato" onclick="selecionandoPrato(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedoPrato">Ceviche de Salmão</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorPrato"> 27,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+            </section>
+
+            <!--Segunda secção-->
+            <section class="cardapio">
+                <article class="secaoCardapio">
+                    <p>Agora, sua bebida</p>
+                </article>
+            </section>
+            <section class="caixadeOpcoes">
+                <main class="item bebida" onclick="selecionandoBebida(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaBebida">Coquinha Gelada</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorBebida"> 3,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item bebida" onclick="selecionandoBebida(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaBebida">Suco de Uva</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorBebida"> 4,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item bebida" onclick="selecionandoBebida(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaBebida">Cerveja</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorBebida"> 7,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item bebida" onclick="selecionandoBebida(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaBebida">Vinho</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorBebida"> 24,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+
+                <!--Terceira seção-->
+            </section>
+            <section class="cardapio">
+                <article class="secaoCardapio">
+                    <p>Por fim, sua sobremesa</p>
+                </article>
+            </section>
+            <section class="caixadeOpcoes">
+                <main class="item sobremesa" onclick="selecionandoSobremesa(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaSobremesa">Sorvede de Tucupi</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorSobremesa"> 15,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item sobremesa" onclick="selecionandoSobremesa(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaSobremesa">Barco de Açai</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorSobremesa"> 40,00</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item sobremesa" onclick="selecionandoSobremesa(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaSobremesa">Chocottone</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorSobremesa"> 10,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+                <main class="item sobremesa" onclick="selecionandoSobremesa(this)">
+                    <nav class="itens ">
+                        <figure class="fotoCardapio">
+                            <img src="imagens/frango_yin_yang1.png" alt="frango yin yang">
+                        </figure>
+                        <article class="nomedoItem">
+                            <p class="nomedaSobremesa">Brownie</p>
+                        </article>
+                        <article class="descricaoItem">
+                            <p>Um pouco de batata, um pouco de salada</p>
+                        </article>
+                        <article class="caixaPreco">
+                            <p class="sifrao">R$</p>
+                            <p class="valorSobremesa"> 13,90</p>
+                        </article>
+                        <ion-icon class="checkbox " name="checkbox"></ion-icon>
+                    </nav>
+                </main>
+            </section>
+            <footer class="rodape">
+                <footer class="botaoFinalizarPedido " onclick="PedidoCompleto()">
+                    <p class="p">Selecione os 3 itens <br> para fechar o pedido</p>
+                </footer>
+            </footer>
+
+
+        </div>
+    </div>
+
+    <section class="containerModal">
+        <article class="confirmacao">
+            <p>Confirme Seu Pedido</p>
+        </article>
+        <article class="scriptModal">
+            <p class="mensagem"></p>
+        </article>
+        <article class="ultimaConfirmacao" onclick="mensagemWatsapp()">
+            <p class="confirmaçãoScript">Tudo Certo, Pode Pedir!</p>
+        </article>
+        <article class="opcaoCancelar" onclick="cancelarPedido()">
+            <p class="Cancelar">Cancelar</p>
+        </article>
+    </section>
+
+    <script src="javaScript.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
